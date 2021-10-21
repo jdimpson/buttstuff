@@ -6,7 +6,7 @@ buttstuff is a button library for arduino and circuitpython that makes it easy t
 To use the arduino code, open buttstuff.cpp and buttstuff.h with Sketch->Add File in the Arduino IDE. 
 
 Then use it in your main code like this:
-
+```
 #include "buttstuff.h"
 extern struct mybuttstuff mbs;
 void setup() {
@@ -25,14 +25,14 @@ void loop() {
 		// do whatever you want when the button is pushed for at least msec milliseconds
 	}
 }
-
+```
 Not well tested with reset = False or with pulled down pins.
 
 
 ## circuitpython example
 This is just the __main__ section of the python file:
 
-
+```
 if __name__ == "__main__":
 	import board
 	from time import sleep
@@ -60,3 +60,4 @@ if __name__ == "__main__":
 
 		i = (i+1) % 256  # run from 0 to 255
 		sleep(0.1)
+```
